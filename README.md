@@ -5,4 +5,5 @@ Primeira parte da aula Encontro Remoto 2 - UC12 - SA2
 
 
 segunda parte da aula Encontro Remoto 3 e 4 - UC12 - SA2
+
 Terceira parte da aula Encontro Remoto 3 e 4 - UC12 - SA2
