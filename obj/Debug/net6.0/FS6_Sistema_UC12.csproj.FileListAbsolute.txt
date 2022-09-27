@@ -1,0 +1,15 @@
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\bin\Debug\net6.0\FS6_Sistema_UC12.exe
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\bin\Debug\net6.0\FS6_Sistema_UC12.deps.json
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\bin\Debug\net6.0\FS6_Sistema_UC12.runtimeconfig.json
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\bin\Debug\net6.0\FS6_Sistema_UC12.dll
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\bin\Debug\net6.0\FS6_Sistema_UC12.pdb
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.csproj.AssemblyReference.cache
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.GeneratedMSBuildEditorConfig.editorconfig
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.AssemblyInfoInputs.cache
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.AssemblyInfo.cs
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.csproj.CoreCompileInputs.cache
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.dll
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\refint\FS6_Sistema_UC12.dll
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.pdb
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\FS6_Sistema_UC12.genruntimeconfig.cache
+D:\Senai\UC12 - CODIFICAÇÃO PARA BACK-END\SA3 - Encontro_Remoto_ 01-UC12\FS6_Sistema_UC12\obj\Debug\net6.0\ref\FS6_Sistema_UC12.dll
