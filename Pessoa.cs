@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FS6_Sistema_UC12
 {
-    public class Pessoa
+    public abstract class  Pessoa
     {
         public string Nome { get; set; }
 
