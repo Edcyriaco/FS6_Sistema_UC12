@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\SA3 - Encontro_Remoto_ 01-UC12\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj": {}
+    "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\Encontro Remoto 3 - UC12 - SA2\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj": {}
   },
   "projects": {
-    "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\SA3 - Encontro_Remoto_ 01-UC12\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj": {
+    "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\Encontro Remoto 3 - UC12 - SA2\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\SA3 - Encontro_Remoto_ 01-UC12\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj",
+        "projectUniqueName": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\Encontro Remoto 3 - UC12 - SA2\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj",
         "projectName": "FS6_Sistema_UC12",
-        "projectPath": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\SA3 - Encontro_Remoto_ 01-UC12\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj",
+        "projectPath": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\Encontro Remoto 3 - UC12 - SA2\\FS6_Sistema_UC12\\FS6_Sistema_UC12.csproj",
         "packagesPath": "C:\\Users\\ednal\\.nuget\\packages\\",
-        "outputPath": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\SA3 - Encontro_Remoto_ 01-UC12\\FS6_Sistema_UC12\\obj\\",
+        "outputPath": "D:\\Senai\\UC12 - CODIFICAÇÃO PARA BACK-END\\Encontro Remoto 3 - UC12 - SA2\\FS6_Sistema_UC12\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

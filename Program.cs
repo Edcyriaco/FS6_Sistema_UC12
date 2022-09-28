@@ -3,7 +3,7 @@
         static void Main(string[] args)
         {
           
-        Endereco end = new Endereco();
+       /* Endereco end = new Endereco();
         end.logradouro = "Rua X";
         end.numero = 100;
         end.complemento = "Perto do senai";
@@ -61,10 +61,25 @@
               Console.WriteLine("*************************************************************************************************************************");
               Console.ResetColor();
               }
+*/
+       PessoaJuridica Novapj = new PessoaJuridica ();
+       Endereco end = new Endereco();
+        end.logradouro = "Rua X";
+        end.numero = 100;
+        end.complemento = "Perto do senai";
+        end.enderecoComercial = false;   
 
-              
+        Novapj.endereco = end;
+        Novapj.cnpj = "12345678990001";
+        Novapj.razaoSocial = "Pessoa Juridica";
 
-                    
+        bool ValidarCNPJ =Novapj.ValidarCNPJ(Novapj.cnpj);
+        
+        if(Novapj.ValidarCNPJ(Novapj.cnpj)){
+          Console.WriteLine( "CNPJ Valido" );
+        }else{
+          Console.WriteLine( "CNPJ Invalido" );
+                  }               
 
     
 

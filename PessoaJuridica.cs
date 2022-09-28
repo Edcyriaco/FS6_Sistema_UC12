@@ -10,9 +10,15 @@ namespace FS6_Sistema_UC12
         public string? cnpj { get; set; }
         public string? razaoSocial { get; set; }
 
-          public override void PagarImposto(float rendimento)
-        {
+          public override void PagarImposto(float rendimento){}
             //imposto de pessoa juridica...
+
+            public bool ValidarCNPJ(string cnpj){
+                if(cnpj.Length >= 14 && (cnpj.Substring(cnpj.Length - 4)) == "0001"){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
         }
     }
-}
