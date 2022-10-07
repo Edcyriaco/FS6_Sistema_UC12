@@ -10,20 +10,41 @@ namespace FS6_Sistema_UC12
         public string? cpf { get; set; }
 
         public DateTime dataNasc { get; set; }
-        public override void PagarImposto(float rendimento)
+
+        public float rendimento { get; set; }
+
+        public override double PagarImposto(float rendimento)
         {
+            if (rendimento <= 1500)
+            {
+                return 0;
+            }
+            else if (rendimento > 1500 && rendimento <= 5000)
+            {
+                return rendimento * .03;
+            }
+            else
+            {
+                return (rendimento / 100) * 5;
+
+            }
             //imposto de pessoa fisica...
         }
 
-        public bool ValidarDataNascimento(DateTime dataNasc){
-            
+        public bool ValidarDataNascimento(DateTime dataNasc)
+        
+        {
+
             //tipo nomedavariavel = (esta recebendo) biblioteca.função
-            DateTime dataAtual= DateTime.Today; 
+            DateTime dataAtual = DateTime.Today;
             double anos = (dataAtual - dataNasc).TotalDays / 365;
 
-            if (anos >= 18){
+            if (anos >= 18)
+            {
                 return true;
-            }else {
+            }
+            else
+            {
                 return false;
             }
         }
