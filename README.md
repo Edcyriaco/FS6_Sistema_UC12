@@ -11,3 +11,4 @@ Terceira parte da aula Encontro Remoto 3 e 4 - UC12 - SA2
 Quarta parte da aula Encontro Remoto 5 e incio 6 - UC12 - SA2
 
 Encontro Remoto 8 - UC12 SA2 parte 1
+Encontro Remoto 8 - UC12 SA2 parte 2

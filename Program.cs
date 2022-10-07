@@ -60,27 +60,29 @@
                 switch (tecladigitada)
                 {
                     case "1":
-                        Endereco Endresid = new Endereco();
-                        Console.WriteLine($"Digite seu lougradouro");
-                        Endresid.logradouro = Console.ReadLine();
+                        /*
+                            Endereco Endresid = new Endereco();
+                            Console.WriteLine($"Digite seu lougradouro");
+                            Endresid.logradouro = Console.ReadLine();
 
-                        Console.WriteLine($"Digite o número da rua residencia");
-                        Endresid.numero = int.Parse(Console.ReadLine());
+                            Console.WriteLine($"Digite o número da rua residencia");
+                            Endresid.numero = int.Parse(Console.ReadLine());
 
-                        Console.WriteLine($"Digite o complemento ( Aparte enter para vazio)");
-                        Endresid.complemento = Console.ReadLine();
+                            Console.WriteLine($"Digite o complemento ( Aparte enter para vazio)");
+                            Endresid.complemento = Console.ReadLine();
 
-                        Console.WriteLine($"Este endereço é comercial? S/N");
-                        string oqueeledigitou = Console.ReadLine().ToUpper();
+                            Console.WriteLine($"Este endereço é comercial? S/N");
+                            string oqueeledigitou = Console.ReadLine().ToUpper();
 
-                        if (oqueeledigitou == "S")
-                        {
-                            Endresid.enderecoComercial = true;
-                        }
-                        else
-                        {
-                            Endresid.enderecoComercial = false;
-                        }
+                            if (oqueeledigitou == "S")
+                            {
+                                Endresid.enderecoComercial = true;
+                            }
+                            else
+                            {
+                                Endresid.enderecoComercial = false;
+                            }
+                            */
 
 
                         //Endresid.logradouro = "Rua X";
@@ -89,39 +91,39 @@
                         //Endresid.enderecoComercial = false;
 
                         PessoaFisica novaPF = new PessoaFisica();
-                        novaPF.endereco = Endresid;
+                        //novaPF.endereco = Endresid;
                         Console.WriteLine($"Digite seu CPF (somente números)");
                         novaPF.cpf = Console.ReadLine();
 
                         Console.WriteLine($"Digite seu nome");
                         novaPF.Nome = Console.ReadLine();
 
-                        Console.WriteLine($"Digite o valor do seu rendimento mensal");
-                        novaPF.rendimento = float.Parse(Console.ReadLine());
+                        //Console.WriteLine($"Digite o valor do seu rendimento mensal");
+                        //novaPF.rendimento = float.Parse(Console.ReadLine());
 
-                        Console.WriteLine($"Digite sua data de nascimento");
-                        novaPF.dataNasc = DateTime.Parse(Console.ReadLine());
+                        //Console.WriteLine($"Digite sua data de nascimento");
+                        //novaPF.dataNasc = DateTime.Parse(Console.ReadLine());
 
                         //Maria.endereco = Endresid;
                         //Maria.cpf = "12345678";
                         //Maria.dataNasc = new DateTime(1957, 08, 06, 05, 40, 55);
                         //Maria.Nome = "Maria Pereira";
 
-                        Console.WriteLine(novaPF.endereco.logradouro);
-                        Console.WriteLine(novaPF.endereco.numero);
-                        Console.WriteLine(novaPF.endereco.complemento);
-                        Console.WriteLine(novaPF.endereco.enderecoComercial);
-                        Console.WriteLine(novaPF.Nome);
-                        Console.WriteLine(novaPF.cpf);
-                        Console.WriteLine(novaPF.dataNasc);
-                        double ImpostoPago = novaPF.PagarImposto(2000);
-                        Console.WriteLine($"Ela vai pagar R${ImpostoPago},00 Reais de imposto");
+                        //Console.WriteLine(novaPF.endereco.logradouro);
+                        //Console.WriteLine(novaPF.endereco.numero);
+                        // Console.WriteLine(novaPF.endereco.complemento);
+                        //Console.WriteLine(novaPF.endereco.enderecoComercial);
+                        //Console.WriteLine(novaPF.Nome);
+                        //Console.WriteLine(novaPF.cpf);
+                        //Console.WriteLine(novaPF.dataNasc);
+                        //double ImpostoPago = novaPF.PagarImposto(2000);
+                        //Console.WriteLine($"Ela vai pagar R${ImpostoPago},00 Reais de imposto");
 
                         bool idadeValidada = novaPF.ValidarDataNascimento(novaPF.dataNasc);
 
                         if (idadeValidada == true)
                         {
-                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
                             Console.WriteLine("***********************************************************************");
                             Console.WriteLine("|                SENAI - Cadastro de Pessoas                          |");
                             Console.WriteLine("|                                                                     |");
@@ -141,14 +143,39 @@
                             Console.WriteLine("***********************************************************************");
                             Console.ForegroundColor = ConsoleColor.DarkGreen;
                         }
+                        //StreamWriter sw = new StreamWriter($"{novaPF.Nome}.txt");
+                        //sw.WriteLine(novaPF.Nome);
+                        //sw.WriteLine(novaPF.cpf);
+                        //sw.Close();
+                        using (StreamWriter sw = new StreamWriter($"{novaPF.Nome}.txt"))
+                        {
+                            sw.WriteLine(novaPF.Nome);
+                            sw.WriteLine(novaPF.cpf);
+
+                        }
 
                         break;
                     case "2":
                         //Listar pessoa física 
-                        foreach (var cadaItem in listaPf)
+                        //foreach (var cadaItem in listaPf)
+                        // {
+                        //     Console.WriteLine($"{cadaItem.Nome}, {cadaItem.cpf}, {cadaItem.dataNasc}, {cadaItem.rendimento}, {cadaItem.endereco.enderecoComercial}");
+                        // }
+                        Console.WriteLine("Digite o nome da pessoa que deseja ler o cadastro");
+                        string nomedigitado = Console.ReadLine();
+
+                        using (StreamReader sr = new StreamReader($"{nomedigitado}.txt"))
                         {
-                            Console.WriteLine($"{cadaItem.Nome}, {cadaItem.cpf}, {cadaItem.dataNasc}, {cadaItem.rendimento}, {cadaItem.endereco.enderecoComercial}");
+                            string linha;
+                            while ((linha = sr.ReadLine()) != null)
+                            {
+                                Console.WriteLine($"{linha}");
+                            }
+
                         }
+                        Console.WriteLine("Aperte qualquer tecla para continuar");
+                        Console.ReadLine();
+
                         break;
                     case "3":
                         //Remover pessoa física
@@ -156,15 +183,18 @@
                         string cpfProcurado = Console.ReadLine();
 
                         PessoaFisica pessoaEncontrada = listaPf.Find(cadaItem => cadaItem.cpf == cpfProcurado);
-                        if (pessoaEncontrada != null){
+                        if (pessoaEncontrada != null)
+                        {
                             listaPf.Remove(pessoaEncontrada);
                             Console.WriteLine("Cadastro Removido");
 
-                        }else{
+                        }
+                        else
+                        {
                             Console.WriteLine("CPF não encotrado");
 
                         }
-                        
+
                         break;
                     case "4":
                         //Cadastrar pessoa Jurídica
